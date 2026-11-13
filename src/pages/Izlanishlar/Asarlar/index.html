@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadidlar Asarlari - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper active">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper ">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper ">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Izlanishlar</span>
+                <span>/</span>
+                <span>Asarlar</span>
+            </div>
+            <h1 class="banner-title">Jadidlar Asarlari va Kitoblari</h1>
+            <p class="banner-subtitle">
+                Adabiyot, falsafa, publitsistika, tilshunoslik va pedagogika bo'yicha jadid allomalari tomonidan yaratilgan sara asarlar matnlari.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <!-- FILTER & SEARCH -->
+            <div class="filter-bar">
+                <div class="filter-search-box">
+                    <span class="filter-search-icon">🔍</span>
+                    <input type="text" id="bookSearchInput" class="filter-search-input" placeholder="Asar nomi yoki muallif bo'yicha qidiruv...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab-btn active" data-filter="all">Barchasi</button>
+                    <button class="filter-tab-btn" data-filter="badiiy">Badiiy asarlar</button>
+                    <button class="filter-tab-btn" data-filter="ilmiy">Ilmiy-falsafiy</button>
+                    <button class="filter-tab-btn" data-filter="darslik">Darsliklar</button>
+                </div>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="items-grid" id="booksGrid">
+                <!-- Book 1 -->
+                <div class="doc-card-modern filterable-item" data-category="badiiy">
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;">📖</div>
+                    <div class="doc-meta">
+                        <span>✍️ Mahmudxo'ja Behbudiy</span>
+                        <span>📅 1911-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/1.jpg" alt="Padarkush"></div>
+                    <h3 class="doc-title">«Padarkush» yoxud o'qimagan bolaning holi</h3>
+                    <p class="doc-excerpt">
+                        Turkistondagi birinchi milliy drama. Unda jaholat, ilmsizlik va tarbiyasizlikning mudhish oqibatlari fojiali drama vositasida ko'rsatib berilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Padarkush» dramasi', '«Padarkush» dramasi 1911-yilda yozilgan va 1913-yilda Samarqandda chop etilgan. Spektakl ilk bor 1914-yil 25-yanvarda Samarqandda sahnaga qo\'yilgan. Mazkur asar o\'zbek professional teatrining tug\'ilishiga asos soldi.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Drama</span>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="doc-card-modern filterable-item" data-category="badiiy">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">📖</div>
+                    <div class="doc-meta">
+                        <span>✍️ Abdulla Qodiriy</span>
+                        <span>📅 1922-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/2.jpg" alt="O'tkan kunlar"></div>
+                    <h3 class="doc-title">«O'tkan kunlar» romani</h3>
+                    <p class="doc-excerpt">
+                        O'zbek romanchiligining birinchi durdonasi. XIX asr o'rtalaridagi Qo'qon xonligi davri fojialari, mustamlakachilik arafasidagi milliy tanazzul sabablari tahlil qilinadi.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«O\'tkan kunlar» romani', '«O\'tkan kunlar» dastlab 1922-yildan boshlab «Inqilob» jurnalida bosilib borgan, 1926-yilda alohida kitob holida chop etilgan. Qodiriy: «Moziyga qaytib ish ko\'rmoq xayrlikdur», deb yozgan edi.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Roman</span>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="doc-card-modern filterable-item" data-category="badiiy">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">📖</div>
+                    <div class="doc-meta">
+                        <span>✍️ Abdulhamid Cho'lpon</span>
+                        <span>📅 1934-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/3.jpg" alt="Kecha va kunduz"></div>
+                    <h3 class="doc-title">«Kecha va kunduz» romani</h3>
+                    <p class="doc-excerpt">
+                        O'zbek xalqining ma'naviy uyg'onishi va fojiasini Zebi timsolida tasvirlagan roman. Cho'lpon o'zbek psixologik nasrini yangi bosqichga olib chiqqan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Kecha va kunduz»', 'Asar ikki qismdan iborat bo\'lishi rejalashtirilgan edi: «Kecha» va «Kunduz». Afsuski, qatag\'on tufayli faqat «Kecha» qismi bizgacha yetib kelgan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Roman</span>
+                    </div>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="doc-card-modern filterable-item" data-category="ilmiy">
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;">💡</div>
+                    <div class="doc-meta">
+                        <span>✍️ Abdurauf Fitrat</span>
+                        <span>📅 1915-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/4.jpg" alt="Rahbari najot"></div>
+                    <h3 class="doc-title">«Rahbari najot» (Najot yo'li)</h3>
+                    <p class="doc-excerpt">
+                        Jamiyat, inson kamoloti, oila tarbiyasi va ijtimoiy burchlar to'g'risidagi fundamental falsafiy-axloqiy asar. Buxoroda jiddiy rezonans uyg'otgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Rahbari najot»', 'Fitrat ushbu asarida musulmon olamining taraqqiyotdan orqada qolish sabablarini amaliy fanlardan uzoqlashish va xurofotga botishda deb ko\'rsatadi.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Falsafa</span>
+                    </div>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="doc-card-modern filterable-item" data-category="darslik">
+                    <div class="doc-icon-badge" style="background:#f0fdf4; color:#15803d;">📚</div>
+                    <div class="doc-meta">
+                        <span>✍️ Abdulla Avloniy</span>
+                        <span>📅 1917-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/5.jpg" alt="Turkiy Guliston"></div>
+                    <h3 class="doc-title">«Turkiy Guliston yoxud axloq»</h3>
+                    <p class="doc-excerpt">
+                        O'zbek pedagogikasi va axloqshunosligining poydevori bo'lgan asar. «Tarbiya biz uchun yo hayot - yo mamot, yo najot - yo halokat...» g'oyasi ilgari surilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Turkiy Guliston yoxud axloq»', 'Yangi usul maktablarining yuqori sinflari uchun darslik sifatida yaratilgan. Insoniy fazilatlar va nuqsonlar ibratli hikmatlar orqali tushuntiriladi.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Pedagogika</span>
+                    </div>
+                </div>
+
+                <!-- Book 6 -->
+                <div class="doc-card-modern filterable-item" data-category="darslik">
+                    <div class="doc-icon-badge" style="background:#f0fdf4; color:#15803d;">📚</div>
+                    <div class="doc-meta">
+                        <span>✍️ Munavvarqori Abdurashidxonov</span>
+                        <span>📅 1907-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/6.jpg" alt="Adibi avval"></div>
+                    <h3 class="doc-title">«Adibi avval» (Birinchi adib)</h3>
+                    <p class="doc-excerpt">
+                        Yangi usuldagi maktablar uchun tuzilgan birinchi o'zbek alifbe darsligi. Bolalarga qisqa muddatda savod chiqarish uslubi joriy etilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Adibi avval» alifbesi', 'Munavvarqori usuli savtiya (tovush usuli) bo\'yicha yaratgan darslik. Bir necha bor qayta nashr etilgan va minglab o\'zbek bolalarining savodini chiqargan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Alifbe</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+        </div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+    <script>
+        document.getElementById('bookSearchInput').addEventListener('input', function(e) {
+            const val = e.target.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('#booksGrid .doc-card-modern');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(val) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

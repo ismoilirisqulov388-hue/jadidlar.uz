@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Til va Imloga Oid Asarlar - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper active">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper ">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Til va imlo</span>
+                <span>/</span>
+                <span>Asarlar</span>
+            </div>
+            <h1 class="banner-title">Ona Tili va Grammatika Asarlari</h1>
+            <p class="banner-subtitle">
+                O'zbek tili grammatikasi, lug'atshunoslik va imlo qoidalarini shakllantirgan jadid tilshunoslari asarlari to'plami.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-search-box">
+                    <span class="filter-search-icon">🔍</span>
+                    <input type="text" id="langBookSearch" class="filter-search-input" placeholder="Kitob nomi yoki muallif bo'yicha qidiruv...">
+                </div>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="items-grid" id="langBooksGrid">
+<!-- Item 1 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;"><img src="../../../../public/image/news/Jadidlar_files/Sharq_madaniyati_va_yozuvi.jpg" alt="Til va imlo asari"></div>
+                    <div class="doc-meta">
+                        <span>✍️ Abdurauf Fitrat</span>
+                        <span>📅 1925-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Sarf» va «Nahv» (O'zbek tili qoidalari)</h3>
+                    <p class="doc-excerpt">
+                        O'zbek milliy tilshunosligida morfologiya (sarf) va sintaksis (nahv) bo'yicha yaratilgan birinchi mukammal darsliklar to'plami.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Fitrat: Sarf va Nahv', 'Ushbu asarlar orqali o\'zbek tilining ichki qonuniyatlari, so\'z yasalishi va gap qurilishi arab grammatikasi qolipidan chiqarilib, milliy asosda ilmiy tavsiflandi.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Grammatika</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;"><img src="../../../../public/image/asarlar/6.jpg" alt="Til va imlo asari"></div>
+                    <div class="doc-meta">
+                        <span>✍️ Ashurali Zohiriy</span>
+                        <span>📅 1916-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Imlo lug'ati»</h3>
+                    <p class="doc-excerpt">
+                        Qo'qonda jadid maktablari o'qituvchisi Ashurali Zohiriy tuzgan birinchi o'zbek imlo qo'llanmasi. Unda so'zlarning to'g'ri yozilishi me'yorlari berilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Ashurali Zohiriy: Imlo lug\'ati', 'Ashurali Zohiriy o\'z davrining eng yetuk tilshunoslaridan biri bo\'lib, yosh avlodning to\'g\'ri yozishi uchun ilk marotaba amaliy imlo qoidalarini tizimlashtirgan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Lug'at</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;"><img src="../../../../public/image/asarlar/4.jpg" alt="Til va imlo asari"></div>
+                    <div class="doc-meta">
+                        <span>✍️ Elbek (Mashriq Yunusov)</span>
+                        <span>📅 1923-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Boshlang'ich maktabda ona tili»</h3>
+                    <p class="doc-excerpt">
+                        «Chig'atoy gurungi» a'zosi, shoir va tilshunos Elbekning maktablar uchun yaratgan jonli xalq tili boyligiga asoslangan grammatika qo'llanmasi.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Elbek: Ona tili darsligi', 'Elbek xalq og\'zaki ijodi, maqol va matallardan keng foydalanib, o\'quvchilarga ona tilining go\'zalligini singdirish usullarini ko\'rsatib bergan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Darslik</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;"><img src="../../../../public/image/asarlar/5.jpg" alt="Til va imlo asari"></div>
+                    <div class="doc-meta">
+                        <span>✍️ Elbek (Mashriq Yunusov)</span>
+                        <span>📅 1923-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Boshlang'ich maktabda ona tili»</h3>
+                    <p class="doc-excerpt">
+                        «Chig'atoy gurungi» a'zosi, shoir va tilshunos Elbekning maktablar uchun yaratgan jonli xalq tili boyligiga asoslangan grammatika qo'llanmasi.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Elbek: Ona tili darsligi', 'Elbek xalq og\'zaki ijodi, maqol va matallardan keng foydalanib, o\'quvchilarga ona tilining go\'zalligini singdirish usullarini ko\'rsatib bergan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Darslik</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;"><img src="../../../../public/image/asarlar/1.jpg" alt="Til va imlo asari"></div>
+                    <div class="doc-meta">
+                        <span>✍️ Elbek (Mashriq Yunusov)</span>
+                        <span>📅 1923-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Boshlang'ich maktabda ona tili»</h3>
+                    <p class="doc-excerpt">
+                        «Chig'atoy gurungi» a'zosi, shoir va tilshunos Elbekning maktablar uchun yaratgan jonli xalq tili boyligiga asoslangan grammatika qo'llanmasi.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Elbek: Ona tili darsligi', 'Elbek xalq og\'zaki ijodi, maqol va matallardan keng foydalanib, o\'quvchilarga ona tilining go\'zalligini singdirish usullarini ko\'rsatib bergan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Darslik</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/asarlar/6.jpg" alt="Asar">
+                        <span class="doc-badge">1919</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Ona tili - Fitrat</h3>
+                        <p class="doc-meta">Muallif: <strong>Abdurauf Fitrat</strong> &bull; Tilshunoslik</p>
+                        <p class="doc-desc">Turkiy tilning ichki imkoniyatlari, lug'at boyligi va grammatik qoidalari bayon qilingan fundamental qo'llanma.</p>
+                        <span class="btn-secondary-sm">Mutolaa qilish</span>
+                    </div>
+                </div>
+</div>
+        
+        <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+</div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+</body>
+</html>

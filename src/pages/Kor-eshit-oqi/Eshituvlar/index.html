@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshituvlar (Audiolar) - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper ">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper ">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper active">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Ko'r-eshit-o'qi</span>
+                <span>/</span>
+                <span>Eshituvlar</span>
+            </div>
+            <h1 class="banner-title">Audio Ma'ruzalar va Podkastlar</h1>
+            <p class="banner-subtitle">
+                O'zbekiston Milliy radiosi oltin fondidagi nodir audioyozuvlar, zamonaviy olimlar podkastlari va asarlar audiokitoblari.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <div class="items-grid" style="margin-top: 35px;">
+<!-- Audio 1 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;">🎧</div>
+                    <div class="doc-meta">
+                        <span>🎙 Audiokitob</span>
+                        <span>⏱ 4 soat 20 daq</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/snapedit_1709296294610.jpeg" alt="Audio yozuv"></div>
+                    <h3 class="doc-title">Abdulla Qodiriy: «O'tkan kunlar» (To'liq audiokitob)</h3>
+                    <p class="doc-excerpt">
+                        O'zbekiston xalq artisti Afzal Rafiqov ijrosida yozib olingan professional audiokitob. Har bir bob alohida musiqiy bezaklar bilan ta'minlangan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«O\'tkan kunlar» audiokitobi', 'O\'zbekiston Milliy teleradiokompaniyasi oltin fondidan taqdim etilgan to\'liq audioyozuv. Afzal Rafiqovning betakror ovozida moziyga unutilmas sayohat.')">Tinglash (Play)</button>
+                        <span class="btn-secondary-sm">MP3 format</span>
+                    </div>
+                </div>
+
+                <!-- Audio 2 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🎧</div>
+                    <div class="doc-meta">
+                        <span>🎙 Tarixiy Podkast</span>
+                        <span>⏱ 38 daq</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/snapedit_1709970407706.jpeg" alt="Audio yozuv"></div>
+                    <h3 class="doc-title">«Jadidlar qanday fikrlagan?» (1-qism: Samarqand ma'rifati)</h3>
+                    <p class="doc-excerpt">
+                        Tarix fanlari doktori, professor bilan intervyu. Behbudiy kutubxonasining ochilishi, teatr truppalari va jamiyatning dastlabki munosabati tahlil qilinadi.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Jadidlar podkasti', 'Podkastda Behbudiyning gazeta ochish yo\'lidagi to\'siqlari va qanday qilib o\'z hisobidan nashriyot qurgani qiziqarli faktlar bilan aytib beriladi.')">Tinglash (Play)</button>
+                        <span class="btn-secondary-sm">Podkast</span>
+                    </div>
+                </div>
+
+                <!-- Audio 3 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🎧</div>
+                    <div class="doc-meta">
+                        <span>🎙 She'riyat</span>
+                        <span>⏱ 25 daq</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/snapedit_1714970696860.jpeg" alt="Audio yozuv"></div>
+                    <h3 class="doc-title">Abdulhamid Cho'lpon: Sara she'rlar va g'azallar</h3>
+                    <p class="doc-excerpt">
+                        Cho'lponning «Buzilgan o'lkaga», «Go'zal», «Kishan» kabi istiqlolparvar she'rlarining taniqli suxandonlar tomonidan o'qilgan audio to'plami.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Cho\'lpon she\'rlari audiosi', 'Milliy musiqa jo\'rligida o\'qilgan o\'tli satrlar to\'plami.')">Tinglash (Play)</button>
+                        <span class="btn-secondary-sm">Audio to'plam</span>
+                    </div>
+                </div>
+                <div class="media-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/asarlar/10.jpg" alt="Audio yozuv">
+                        <span class="doc-badge">Audio</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">'Munozara' asari radiospektakli</h3>
+                        <p class="doc-meta">Ijrochilar: O'zbekiston xalq artistlari &bull; 45 daqiqa</p>
+                        <p class="doc-desc">Fitratning jahonga mashhur 'Hindistonda bir farangi ila buxoroli mudarris munozarasi' asarining audio talqini.</p>
+                        <span class="btn-secondary-sm">Eshiting 🎧</span>
+                    </div>
+                </div>
+                <div class="media-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/asarlar/11.jpg" alt="Audio yozuv">
+                        <span class="doc-badge">Audio</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Cho'lpon she'rlari audio antologiyasi</h3>
+                        <p class="doc-meta">O'qidi: Shomahmud Shorasulov &bull; 30 daqiqa</p>
+                        <p class="doc-desc">'Go'zal', 'Binafsha', 'Ko'ngil', 'Buzilgan o'lkaga' va boshqa saralangan she'rlar jamlanmasi.</p>
+                        <span class="btn-secondary-sm">Eshiting 🎧</span>
+                    </div>
+                </div>
+                <div class="media-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/portraits/avloniy.jpg" alt="Audio dars">
+                        <span class="doc-badge">Audio</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Avloniy: 'Turkiy Guliston yoxud Axloq' suhbatlari</h3>
+                        <p class="doc-meta">Podkast suhbat &bull; 35 daqiqa</p>
+                        <p class="doc-desc">Axloqiy qadriyatlar, tarbiya usullari va insoniylik mezonlari haqidagi ibratli mulohazalar.</p>
+                        <span class="btn-secondary-sm">Eshiting 🎧</span>
+                    </div>
+                </div>
+</div>
+        
+        <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+</div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+</body>
+</html>

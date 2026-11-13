@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadidlar Hikmatlari - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper active">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper ">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Til va imlo</span>
+                <span>/</span>
+                <span>Hikmatlar</span>
+            </div>
+            <h1 class="banner-title">Jadid Bobolarimiz Hikmatlari</h1>
+            <p class="banner-subtitle">
+                Ilm, ma'rifat, til, millat taqdiri va mustaqillik haqidagi qalbga singuvchi aforizmlar va iqtiboslar to'plami.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="hikmatlar-page-wrap">
+            <div class="container">
+                <div class="filter-bar" style="margin-bottom: 35px;">
+                    <div class="filter-search-box">
+                        <span class="filter-search-icon">🔍</span>
+                        <input type="text" class="filter-search-input" placeholder="Hikmat matni yoki muallif bo'yicha qidiruv...">
+                    </div>
+                </div>
+
+                <div class="cardMaqolalar">
+                    <!-- Quote 1 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Jumla mahkum fanodur, kechiyur oxir “davron!” – Ma'nosi – Barcha insonlar bu dunyoning vaqtinchalik mahbuslaridir, oxir-oqibat ular o'zlari qozonadigan “davronni-o'limni” albatta tortajaklar.
+                        </div>
+                        <div class="maqola-author">Ibrohim Davron</div>
+                    </div>
+
+                    <!-- Quote 2 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Oling bizlar uchun baldoq, marjonlar kerakmazdur, Bering kog'az, qalamlar, zebi gardonlar kerakmazdur, Tumoru cho'lfi-so'lfi, durri g'altonlar kerakmazdur, To'quz-to'quz cho'yandin bizga qumg'onlar kerakmazdur, Ilm bizlar uchun ortiq sizi qilg'on bizoatdan.
+                        </div>
+                        <div class="maqola-author">Tavallo</div>
+                    </div>
+
+                    <!-- Quote 3 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Har millat o'z tili ila faxr etar.
+                        </div>
+                        <div class="maqola-author">Sadriddin Ayniy</div>
+                    </div>
+
+                    <!-- Quote 4 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Qaysi bir millatkim o'z tilini begona lug'atlardan ozod saqlasa va o'z millatini muhofaza qilsa, din va ozodligini qo'ldan bermaydur.
+                        </div>
+                        <div class="maqola-author">Sadriddin Ayniy</div>
+                    </div>
+
+                    <!-- Quote 5 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Dunyoda turmoq uchun dunyoviy fan va ilm lozimdur, zamona ilmi va fanidan bebahra millat boshqalarga poymol bo'lur.
+                        </div>
+                        <div class="maqola-author">Mahmudxo'ja Behbudiy</div>
+                    </div>
+
+                    <!-- Quote 6 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir.
+                        </div>
+                        <div class="maqola-author">Abdulla Avloniy</div>
+                    </div>
+
+                    <!-- Quote 7 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Modomiki, biz yangi davrga oyoq qo'ydik, bas, har bir ishda yangilikka ergashmog'imiz va moziy xatolaridan ibrat olmog'imiz shartdir.
+                        </div>
+                        <div class="maqola-author">Abdulla Qodiriy</div>
+                    </div>
+
+                    <!-- Quote 8 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Kishan kiyma, bo'yin egma, ki sen ham hur tug'ilg'onsen!
+                        </div>
+                        <div class="maqola-author">Abdulhamid Cho'lpon</div>
+                    </div>
+
+                    <!-- Quote 9 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Haq berilmas, olinur! Erksiz yashamoq — o'lim bilan barobardir.
+                        </div>
+                        <div class="maqola-author">Abdurauf Fitrat</div>
+                    </div>
+
+                    <!-- Quote 10 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Tilda, fikrda, ishda birlik!
+                        </div>
+                        <div class="maqola-author">Ismoil Gasprinskiy</div>
+                    </div>
+
+                    <!-- Quote 11 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Millatning taraqqiy etishi uchun zamonaviy ilm, to'g'ri axloq va birlik suv va havodek zarurdir.
+                        </div>
+                        <div class="maqola-author">Munavvarqori Abdurashidxonov</div>
+                    </div>
+
+                    <!-- Quote 12 -->
+                    <div class="card-maqola-item">
+                        <div class="maqola-title">
+                            Bizning yoshlarimiz albatta boshqa millat tillarini o'rgansunlar, lekin avvalambor o'z ona tillarini mukammal bilsunlar.
+                        </div>
+                        <div class="maqola-author">Is'hoqxon Ibrat</div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+</div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadid Namoyandalari — Jadidlar.uz</title>
+    <link rel="icon" type="image/svg+xml" href="../../../public/logo.svg">
+    <link rel="stylesheet" href="../../styles/global.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       SITE HEADER (jadidlar.uz original)
+       ========================================================================== -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../jadidlar-bosh oyna/index.html">
+                        <img src="../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../Jadidlar/Jadidlar.html" class="upper active">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../Til-va-imlo/Asarlar/index.html" class="upper ">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../Turkiston-muxtoriyati/Asarlar/index.html" class="upper ">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Jadidlar</span>
+            </div>
+            <h1 class="banner-title">Jadid Namoyandalari</h1>
+            <p class="banner-subtitle">
+                XX asr boshida millat uyg'onishi, istiqlol va ma'rifat yo'lida jon fido qilgan Turkistonning buyuk allomalari, adiblari va davlat arboblari.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <!-- FILTER & SEARCH -->
+            <div class="filter-bar">
+                <div class="filter-search-box">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #64748b;"></i>
+                    <input type="text" id="jadidSearchInput" class="filter-search-input" placeholder="Jadid ismini kiriting (masalan: Behbudiy, Fitrat, Qodiriy)...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab-btn active" data-filter="all">Barchasi</button>
+                    <button class="filter-tab-btn" data-filter="maorif">Maorifparvarlar</button>
+                    <button class="filter-tab-btn" data-filter="adib">Adib va shoirlar</button>
+                    <button class="filter-tab-btn" data-filter="davlat">Davlat arboblari</button>
+                </div>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="items-grid" id="jadidGrid">
+<!-- 1. Mahmudxo'ja Behbudiy -->
+                <div class="person-card-modern filterable-item" data-category="maorif">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/behbudiy.jpg" alt="Mahmudxo'ja Behbudiy">
+                        <span class="card-badge">Jadidchilik yetakchisi</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1875 – 1919 (Samarqand)</div>
+                        <h3 class="card-heading">Mahmudxo'ja Behbudiy</h3>
+                        <p class="card-desc">
+                            Turkiston jadidchilik harakatining asoschisi, birinchi o'zbek dramaturgi («Padarkush»), noshir, «Oyina» jurnali va «Samarqand» gazetasi muharriri.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Mahmudxo\'ja Behbudiy', '1875 — 1919', '../../../public/image/portraits/behbudiy.jpg', 'Turkiston jadidchilik harakatining yetakchisi, «Padarkush» pyesasi muallifi. 1919-yilda Qarshida Buxoro amiri beklari tomonidan qatl etilgan.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Abdulla Qodiriy -->
+                <div class="person-card-modern filterable-item" data-category="adib">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/news/Jadidlar_files/Abdulla_Qodiriy_39LON6y.jpg" alt="Abdulla Qodiriy">
+                        <span class="card-badge">O'zbek romanchiligi asoschisi</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1894 – 1938 (Toshkent)</div>
+                        <h3 class="card-heading">Abdulla Qodiriy</h3>
+                        <p class="card-desc">
+                            O'zbek adabiyotida birinchi roman «O'tkan kunlar» va «Mehrobdan chayon» muallifi, milliy matbuot va satira («Mushtum») fidoyisi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Abdulla Qodiriy', '1894 — 1938', '../../../public/image/news/Jadidlar_files/Abdulla_Qodiriy_39LON6y.jpg', 'O\'zbek romanchiligining asoschisi, «O\'tkan kunlar», «Mehrobdan chayon» asarlari orqali millat dardini ko\'tarib chiqqan adib.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Munavvarqori Abdurashidxonov -->
+                <div class="person-card-modern filterable-item" data-category="maorif">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/munavvarqori.jpg" alt="Munavvarqori Abdurashidxonov">
+                        <span class="card-badge">Ma'rifatparvar</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1878 – 1931 (Toshkent)</div>
+                        <h3 class="card-heading">Munavvarqori Abdurashidxonov</h3>
+                        <p class="card-desc">
+                            Turkistonda birinchi yangi usul jadid maktablari, «Shukrat», «Sadoyi Turkiston» gazetalari tashkilotchisi va «Komyak» jamiyati rahnamosi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Munavvarqori Abdurashidxonov', '1878 — 1931', '../../../public/image/portraits/munavvarqori.jpg', 'Toshkent jadidchiligining yetakchisi, «Adibi avval» darsligi muallifi, milliy maorif va matbuot homiysi.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Abdurauf Fitrat -->
+                <div class="person-card-modern filterable-item" data-category="adib">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/fitrat.jpg" alt="Abdurauf Fitrat">
+                        <span class="card-badge">Alloma va davlat arbobi</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1886 – 1938 (Buxoro)</div>
+                        <h3 class="card-heading">Abdurauf Fitrat</h3>
+                        <p class="card-desc">
+                            «Munozara», «Hind sayyohi», «Ona tili», «O'zbek tili qoidalari» asarlari muallifi, Buxoro Xalq Sovet Respublikasi maorif noziri.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Abdurauf Fitrat', '1886 — 1938', '../../../public/image/portraits/fitrat.jpg', 'Faylasuf, yozuvchi, sharqshunos olim. O\'zbek tili va adabiyotini ilmiy tizimga solgan zabardast siymo.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Abdulhamid Cho'lpon -->
+                <div class="person-card-modern filterable-item" data-category="adib">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/cholpon.jpg" alt="Abdulhamid Cho'lpon">
+                        <span class="card-badge">Otashin shoir</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1897 – 1938 (Andijon)</div>
+                        <h3 class="card-heading">Abdulhamid Cho'lpon</h3>
+                        <p class="card-desc">
+                            «Kecha va kunduz» romani, «Uyg'onish», «Buloqlar» to'plamlari muallifi, milliy ozodlik va hurriyat kuychisi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Abdulhamid Cho\'lpon', '1897 — 1938', '../../../public/image/portraits/cholpon.jpg', 'Yangi o\'zbek she\'riyatining asoschisi, dramaturg va tarjimon. Erkinlik va milliy uyg\'onish g\'oyalarini kuylagan.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Abdulla Avloniy -->
+                <div class="person-card-modern filterable-item" data-category="maorif">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/avloniy.jpg" alt="Abdulla Avloniy">
+                        <span class="card-badge">Pedagog va dramaturg</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1878 – 1934 (Toshkent)</div>
+                        <h3 class="card-heading">Abdulla Avloniy</h3>
+                        <p class="card-desc">
+                            «Turkiy Guliston yoxud Axloq» asari muallifi, «Turon» teatr truppasi asoschisi, yangi usul maktablari uchun bir qancha darsliklar tuzuvchisi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Abdulla Avloniy', '1878 — 1934', '../../../public/image/portraits/avloniy.jpg', '«Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat» shiorini o\'rtaga tashlagan buyuk ma\'rifatparvar.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Is'hoqxon Ibrat -->
+                <div class="person-card-modern filterable-item" data-category="maorif">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/ibrat.jpg" alt="Is'hoqxon Ibrat">
+                        <span class="card-badge">Sayyoh va matbaachi</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1862 – 1937 (To'raqo'rg'on)</div>
+                        <h3 class="card-heading">Is'hoqxon Ibrat</h3>
+                        <p class="card-desc">
+                            Namanganda ilk milliy «Matbaai Is'hoqiya»ni ochgan, «Lug'ati sitta alsina» (6 tilli lug'at) va «Tarixi madaniyat» kitoblari muallifi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Is\'hoqxon Ibrat', '1862 — 1937', '../../../public/image/portraits/ibrat.jpg', 'O\'zbek matbaachiligining fidoyisi, ko\'p tilli lug\'atlar tuzuvchisi va ilm-fan targ\'ibotchisi.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Hamza Hakimzoda Niyoziy -->
+                <div class="person-card-modern filterable-item" data-category="adib">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/hamza.jpg" alt="Hamza Hakimzoda Niyoziy">
+                        <span class="card-badge">Dramaturg va bastakor</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1889 – 1929 (Qo'qon)</div>
+                        <h3 class="card-heading">Hamza Hakimzoda Niyoziy</h3>
+                        <p class="card-desc">
+                            «Maysaraning ishi», «Boy ila xizmatchi» asarlari, yangi usul maktablari tashkilotchisi va «Yengil adabiyot» darsliklari muallifi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Hamza Hakimzoda Niyoziy', '1889 — 1929', '../../../public/image/portraits/hamza.jpg', 'Shoir, dramaturg, xalq maorifi jonkuyari va teatr san\'ati asoschilaridan biri.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Sadriddin Ayniy -->
+                <div class="person-card-modern filterable-item" data-category="adib">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/ayniy.jpg" alt="Sadriddin Ayniy">
+                        <span class="card-badge">Alloma va adib</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1878 – 1954 (Buxoro)</div>
+                        <h3 class="card-heading">Sadriddin Ayniy</h3>
+                        <p class="card-desc">
+                            Buxoro jadidchilik harakatining faol namoyandasi, «Buxoro jallodlari», «Esdaliklar» asarlari va ilk maktab darsliklari muallifi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Sadriddin Ayniy', '1878 — 1954', '../../../public/image/portraits/ayniy.jpg', 'Buxoro jadid maktablari uchun «Tahzibus-sibyon» kitobini yozgan atoqli adib va olim.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Ashurali Zohiriy -->
+                <div class="person-card-modern filterable-item" data-category="matbuot">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/zohiriy.jpg" alt="Ashurali Zohiriy">
+                        <span class="card-badge">Tilshunos va noshir</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1885 – 1937 (Qo'qon)</div>
+                        <h3 class="card-heading">Ashurali Zohiriy</h3>
+                        <p class="card-desc">
+                            «Sadoyi Farg'ona» gazetasi muharriri, o'zbek tilining dastlabki izohli lug'atini tuzgan zabardast ma'rifatparvar olim.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Ashurali Zohiriy', '1885 — 1937', '../../../public/image/portraits/zohiriy.jpg', 'Farg\'ona vodiysi jadid matbuotining bosh muharriri, pedagog va tilshunos.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. G'ozi Yunus -->
+                <div class="person-card-modern filterable-item" data-category="matbuot">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/news/Jadidlar_files/yunusgozi_PSDCHkR.png" alt="G'ozi Yunus">
+                        <span class="card-badge">Publitsist va jurnalist</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1889 – 1942 (Toshkent)</div>
+                        <h3 class="card-heading">G'ozi Yunus</h3>
+                        <p class="card-desc">
+                            «Taraqqiy», «Najot» gazetalari tahririyat a'zosi, o'tkir publitsist va jadid matbuotining eng faol mualliflaridan biri.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('G\'ozi Yunus', '1889 — 1942', '../../../public/image/news/Jadidlar_files/yunusgozi_PSDCHkR.png', 'Turkiston milliy matbuotining yorqin publitsisti, hajvchi va jamoat arbobi.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Begali Qosimov -->
+                <div class="person-card-modern filterable-item" data-category="maorif">
+                    <div class="card-img-wrap">
+                        <img src="../../../public/image/portraits/qosimov.jpg" alt="Begali Qosimov">
+                        <span class="card-badge">Jadidshunos olim</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-dates">1942 – 2002 (Kasbi)</div>
+                        <h3 class="card-heading">Begali Qosimov</h3>
+                        <p class="card-desc">
+                            O'zbekiston Respublikasi fan arbobi, filologiya fanlari doktori, professor. O'zbekistonda jadidshunoslik ilmiy maktabining asoschisi.
+                        </p>
+                        <div class="card-footer-action">
+                            <button class="btn-primary-sm" onclick="showDetailModal('Begali Qosimov', '1942 — 2002', '../../../public/image/portraits/qosimov.jpg', 'O\'zbek jadidchilik harakati va Milliy uyg\'onish davri adabiyotini ilmiy asoslab bergan zabardast olim.')">Batafsil ma'lumot</button>
+                            <span class="btn-read-more">Merosi &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+</div>
+    </main>
+
+    <!-- FOOTER (jadidlar.uz original) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../jadidlar-bosh oyna/index.html">
+                    <img src="../../../public/logo.svg" alt="Jadidlar Logo">
+                </a>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-1">
+                    <h4 class="fi-1">Elektron pochta</h4>
+                    <a href="mailto:info@jadidlar.uz">info@jadidlar.uz</a>
+                </div>
+                <div class="footer-info-1">
+                    <h4 class="fi-1">Telefon raqam</h4>
+                    <a href="tel:+998712335470">+998 (71) 233-54-70</a>
+                </div>
+            </div>
+
+            <div class="footer-icons">
+                <h4 class="fi-2">Ijtimoiy tarmoqlar</h4>
+                <div class="ft-icons-flex">
+                    <div class="icons-1"><a href="https://t.me/jadidlar_uz" target="_blank"><i class="fa-brands fa-telegram"></i></a></div>
+                    <div class="icons-1"><a href="https://facebook.com/jadidlar.uz" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="icons-1"><a href="https://instagram.com/jadidlar.uz" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="icons-1"><a href="https://youtube.com/@jadidlar_uz" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-text">
+            <p>«Jadidlar» Barcha huquqlar himoyalangan.</p>
+            <p>© Copyright 2024 — 2026. O'zbekiston Respublikasi Fanlar akademiyasi Tarix instituti</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="modal-dialog">
+            <button class="modal-close-btn" onclick="document.getElementById('detailModal').classList.remove('active')">✕</button>
+            <div id="detailModalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        function showDetailModal(title, years, img, desc) {
+            const modal = document.getElementById('detailModal');
+            const content = document.getElementById('detailModalContent');
+            content.innerHTML = `
+                <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+                    <img src="${img}" alt="${title}" style="width: 140px; height: 180px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                    <div style="flex: 1; min-width: 220px;">
+                        <h2 style="font-size: 22px; color: #0e2b65; margin-bottom: 6px;">${title}</h2>
+                        <p style="color: #6b1324; font-weight: 700; margin-bottom: 12px;">${years}</p>
+                        <p style="font-size: 14.5px; line-height: 1.6; color: #334155;">${desc}</p>
+                    </div>
+                </div>
+            `;
+            modal.classList.add('active');
+        }
+
+        // Search
+        document.getElementById('jadidSearchInput').addEventListener('input', function(e) {
+            const val = e.target.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('#jadidGrid .person-card-modern');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(val) ? '' : 'none';
+            });
+        });
+
+        // Filter tabs
+        document.querySelectorAll('.filter-tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.getAttribute('data-filter');
+                const cards = document.querySelectorAll('#jadidGrid .filterable-item');
+                cards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Overlay close
+        document.getElementById('detailModal').addEventListener('click', function(e) {
+            if (e.target === this) this.classList.remove('active');
+        });
+    </script>
+    <script src="../../styles/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarixiy Matbuot - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper active">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper ">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper ">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Manbalar</span>
+                <span>/</span>
+                <span>Matbuot</span>
+            </div>
+            <h1 class="banner-title">Jadid Matbuoti (Davriy nashrlar)</h1>
+            <p class="banner-subtitle">
+                XX asr boshlarida Turkiston va jahon turkiy matbuotida chop etilgan ilk gazeta va jurnallarning to'liq sonlari, maqolalari va sonlar katalogi.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <!-- FILTER & SEARCH -->
+            <div class="filter-bar">
+                <div class="filter-search-box">
+                    <span class="filter-search-icon">🔍</span>
+                    <input type="text" id="pressSearchInput" class="filter-search-input" placeholder="Gazeta yoki jurnal nomini kiriting...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab-btn active" data-filter="all">Barchasi</button>
+                    <button class="filter-tab-btn" data-filter="gazeta">Gazetalar</button>
+                    <button class="filter-tab-btn" data-filter="jurnal">Jurnallar</button>
+                </div>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="items-grid" id="pressGrid">
+                <!-- Item 1 -->
+                <div class="doc-card-modern filterable-item" data-category="jurnal">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/manbalar/matbuot-1.jpg" alt="«Oyina» jurnali">
+                    </div>
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;">📰</div>
+                    <div class="doc-meta">
+                        <span>📍 Samarqand</span>
+                        <span>📅 1913-1915 yillar</span>
+                    </div>
+                    <h3 class="doc-title">«Oyina» jurnali</h3>
+                    <p class="doc-excerpt">
+                        Mahmudxo'ja Behbudiy muharrirligida chop etilgan haftalik ijtimoiy-siyosiy, ma'rifiy-adabiy jurnal. Jami 68 ta soni chop etilgan. Turkiston, o'zbek, tojik tillarida maqolalar berilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Oyina» jurnali (1913-1915)', '«Oyina» jurnali Samarqandda nashr etilgan. Unda Behbudiy, Fitrat, Siddiqiy Ajziy kabi namoyandalarning ilm-fan, til, maktab, milliy o\'zlikni anglashga oid eng mashhur maqolalari chop etilgan. Raqamlashtirilgan sonlar soni: 68 ta.')">Sonlarni ko'rish</button>
+                        <span class="btn-secondary-sm">68 ta son</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="doc-card-modern filterable-item" data-category="gazeta">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/manbalar/matbuot-2.jpg" alt="«Tarjimon» gazetasi">
+                    </div>
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🗞</div>
+                    <div class="doc-meta">
+                        <span>📍 Bog'chasaroy (Qrim)</span>
+                        <span>📅 1883-1918 yillar</span>
+                    </div>
+                    <h3 class="doc-title">«Tarjimon» gazetasi</h3>
+                    <p class="doc-excerpt">
+                        Ismoil Gasprinskiy asos solgan, butun turkiy dunyoda keng tarqalgan ilk jadid gazetasi. «Tilda, fikrda, ishda birlik!» shiori ostida nashr qilingan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Tarjimon» gazetasi', '«Tarjimon» gazetasi 35 yil davomida uzluksiz nashr etilgan. Turkiston jadidchiligining shakllanishida beqiyos o\'rin tutgan. Behbudiy, Munavvarqori va boshqa ko\'plab jadidlar ushbu gazeta orqali yangi fikrlar bilan tanishgan.')">Sonlarni ko'rish</button>
+                        <span class="btn-secondary-sm">Arxiv fondi</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="doc-card-modern filterable-item" data-category="gazeta">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/manbalar/matbuot-3.jpg" alt="«Taraqqiy» gazetasi">
+                    </div>
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🗞</div>
+                    <div class="doc-meta">
+                        <span>📍 Toshkent</span>
+                        <span>📅 1906-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Taraqqiy» gazetasi</h3>
+                    <p class="doc-excerpt">
+                        Ismoil Obidiy muharrirligida Toshkentda chop etilgan birinchi milliy erkin gazeta. Unda Munavvarqori va Avloniyning mustaqillikka chorlovchi o'tkir maqolalari bosilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Taraqqiy» gazetasi (1906)', '1906-yil 14-iyunda birinchi soni chiqqan. Chor Rossiyasi ma\'murlari tomonidan 19-sonidan so\'ng to\'xtatilgan va muharrir qamoqqa olingan.')">Sonlarni ko'rish</button>
+                        <span class="btn-secondary-sm">19 ta son</span>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="doc-card-modern filterable-item" data-category="gazeta">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/manbalar/matbuot-4.jpg" alt="«Samarqand» gazetasi">
+                    </div>
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🗞</div>
+                    <div class="doc-meta">
+                        <span>📍 Samarqand</span>
+                        <span>📅 1913-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Samarqand» gazetasi</h3>
+                    <p class="doc-excerpt">
+                        Mahmudxo'ja Behbudiy tashabbusi bilan nashr etilgan, xalqning ma'naviy dunyoqarashini o'stirish, fan va madaniyatni targ'ib qilishga qaratilgan nashr.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Samarqand» gazetasi', '1913-yil aprel oyida nashr etila boshlagan. 45 ta soni chop etilganidan keyin moddiy qiyinchiliklar va senzuraviy bosim sababli yopilgan.')">Sonlarni ko'rish</button>
+                        <span class="btn-secondary-sm">45 ta son</span>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="doc-card-modern filterable-item" data-category="gazeta">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/manbalar/matbuot-5.jpg" alt="«Najot» gazetasi">
+                    </div>
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🗞</div>
+                    <div class="doc-meta">
+                        <span>📍 Toshkent</span>
+                        <span>📅 1917-yil</span>
+                    </div>
+                    <h3 class="doc-title">«Najot» gazetasi</h3>
+                    <p class="doc-excerpt">
+                        «Sho'roi Islomiya» tashkilotining organi sifatida Munavvarqori muharrirligida chop etilgan. Turkiston mustaqilligi va milliy birligi g'oyalari aks etgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Najot» gazetasi (1917)', '1917-yil mart oyidan boshlab haftada 2-3 marta nashr etilgan. Milliy ozodlik harakatining eng muhim axboriy minbari bo\'lgan.')">Sonlarni ko'rish</button>
+                        <span class="btn-secondary-sm">To'liq to'plam</span>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="doc-card-modern filterable-item" data-category="jurnal">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/manbalar/matbuot-1.jpg" alt="«Mushtum» jurnali">
+                    </div>
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;">📰</div>
+                    <div class="doc-meta">
+                        <span>📍 Toshkent</span>
+                        <span>📅 1923-1937 yillar</span>
+                    </div>
+                    <h3 class="doc-title">«Mushtum» jurnali (Dastlabki yillar)</h3>
+                    <p class="doc-excerpt">
+                        Abdulla Qodiriy, G'ozi Yunus, Cho'lpon kabi jadid ijodkorlari asos solgan mashhur satirik jurnal. O'sha davrdagi jamiyat illatlari fosh qilingan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Mushtum» jurnali arxivi', 'Abdulla Qodiriy «Kalvak Mahzum», «Toshpo\'lat tajang» taxalluslari bilan o\'zbek satirasining durdonalarini aynan «Mushtum» jurnalida e\'lon qilgan.')">Sonlarni ko'rish</button>
+                        <span class="btn-secondary-sm">Dastlabki sonlar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+        </div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+    <script>
+        document.getElementById('pressSearchInput').addEventListener('input', function(e) {
+            const val = e.target.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('#pressGrid .doc-card-modern');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(val) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

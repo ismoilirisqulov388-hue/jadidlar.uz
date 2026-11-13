@@ -1,0 +1,890 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadidlar — Ilmiy-ma'rifiy portal (Rasmiy sayt)</title>
+    <link rel="icon" type="image/svg+xml" href="../../../public/logo.svg">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION (jadidlar.uz original)
+       ========================================================================== -->
+    <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../Jadidlar/Jadidlar.html" class="upper">JADIDLAR</a>
+                        </li>
+                        <li>
+                            <div class="nav-drop">
+                                <a href="../Manbalar/Arxiv-hujjatlari/index.html" class="upper">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="nav-drop">
+                                <a href="../Izlanishlar/Asarlar/index.html" class="upper">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="nav-drop">
+                                <a href="../Til-va-imlo/Asarlar/index.html" class="upper">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="nav-drop">
+                                <a href="../Turkiston-muxtoriyati/Asarlar/index.html" class="upper">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="nav-drop">
+                                <a href="../Voqealar/Yangiliklar/index.html" class="upper">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="nav-drop">
+                                <a href="../Kor-eshit-oqi/Suratlar/index.html" class="upper">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../Biz-haqimizda/Biz-haqimizda.html" class="upper">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================================================
+       HERO BANNER SLIDER (jadidlar.uz original)
+       ========================================================================== -->
+    <section class="home_slider">
+        <div class="landing_content">
+            <img src="../../../public/image/portraits/behbudiy.jpg" alt="" class="landing_bg" id="heroBgImg">
+            <div class="landing_overlay"></div>
+            
+            <div class="landing_container">
+                <div class="landing_title">
+                    <span class="landing_badge" id="heroSlideBadge">Jadidchilik yetakchisi • (1875 — 1919)</span>
+                    <h3 id="heroSlideName">Mahmudxo'ja Behbudiy</h3>
+                    <p id="heroSlideQuote">«Dunyoda turmoq uchun dunyoviy fan va ilm lozimdir, zamona ilmidan bebahra millat boshqalarga poymol bo'lur.»</p>
+                    <div class="landing_btn_group">
+                        <button class="btn_more" onclick="openScholarModal('behbudiy')">
+                            To'liq ma'lumot <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="../Jadidlar/Jadidlar.html" class="btn_more" style="background: transparent;">
+                            Barcha jadidlar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="landing_portrait_frame">
+                    <img src="../../../public/image/portraits/behbudiy.jpg" alt="Mahmudxo'ja Behbudiy" id="heroSlideImg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider_nav_btn prev" id="heroPrevBtn" title="Oldingi">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider_nav_btn next" id="heroNextBtn" title="Keyingi">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="slider_dots" id="heroDots"></div>
+    </section>
+
+    <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+    <main class="container_full">
+
+        <!-- 1. YANGILIKLAR (NEWS) SECTION -->
+        <section style="margin-top: 20px;">
+            <div class="section_header">
+                <h2 class="section_title">Yangiliklar</h2>
+                <a href="../Voqealar/Yangiliklar/index.html" class="section_view_all">
+                    Barchasini ko'rish <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+
+            <div class="news_carousel_wrap">
+                <div class="news_carousel_track">
+                    <!-- News Item 1 -->
+                    <div class="news_card">
+                        <div class="news_heading">
+                            <h3>«Jadidlar avlodlari uchrashuvi» umummilliy ilmiy-ma'rifiy yig'ini bo'lib o'tdi</h3>
+                        </div>
+                        <div class="news_flex">
+                            <div class="news_text">
+                                <p>Yangiliklar</p>
+                                <span>26.10.2026</span>
+                            </div>
+                            <div class="news_button">
+                                <button class="button" onclick="openNewsModal(0)">To'liq</button>
+                            </div>
+                        </div>
+                        <div class="news_img">
+                            <img src="../../../public/image/news/news-jadid-descendants.jpg" alt="Jadidlar avlodlari">
+                        </div>
+                    </div>
+
+                    <!-- News Item 2 -->
+                    <div class="news_card">
+                        <div class="news_heading">
+                            <h3>Azamat Ziyo: «Jadidlar orzu qilgan taraqqiyot g'oyalari bugun...»</h3>
+                        </div>
+                        <div class="news_flex">
+                            <div class="news_text">
+                                <p>Tadqiqot</p>
+                                <span>24.10.2026</span>
+                            </div>
+                            <div class="news_button">
+                                <button class="button" onclick="openNewsModal(1)">To'liq</button>
+                            </div>
+                        </div>
+                        <div class="news_img">
+                            <img src="../../../public/image/news/news-islam-civilization.jpg" alt="Islom sivilizatsiyasi">
+                        </div>
+                    </div>
+
+                    <!-- News Item 3 -->
+                    <div class="news_card">
+                        <div class="news_heading">
+                            <h3>Cho'lponning «Aldanish» va «Vijdon uyg'onishi» asarlari qayta nashr etildi</h3>
+                        </div>
+                        <div class="news_flex">
+                            <div class="news_text">
+                                <p>Nashrlar</p>
+                                <span>20.10.2026</span>
+                            </div>
+                            <div class="news_button">
+                                <button class="button" onclick="openNewsModal(2)">To'liq</button>
+                            </div>
+                        </div>
+                        <div class="news_img">
+                            <img src="../../../public/image/news/news-cholpon-aldanish.jpg" alt="Cho'lpon asarlari">
+                        </div>
+                    </div>
+
+                    <!-- News Item 4 -->
+                    <div class="news_card">
+                        <div class="news_heading">
+                            <h3>Jadid avlodlari Islom sivilizatsiyasi markazida bo'ldi</h3>
+                        </div>
+                        <div class="news_flex">
+                            <div class="news_text">
+                                <p>Tashrif</p>
+                                <span>18.10.2026</span>
+                            </div>
+                            <div class="news_button">
+                                <button class="button" onclick="openNewsModal(3)">To'liq</button>
+                            </div>
+                        </div>
+                        <div class="news_img">
+                            <img src="../../../public/image/news/news-cholpon-vijdon.jpg" alt="Jadidlar markazda">
+                        </div>
+                    </div>
+
+                    <!-- News Item 5 -->
+                    <div class="news_card">
+                        <div class="news_heading">
+                            <h3>Obidjon Mahmudov va Farg'ona ma'rifatparvarlari fotoxronikasi</h3>
+                        </div>
+                        <div class="news_flex">
+                            <div class="news_text">
+                                <p>Fotoxronika</p>
+                                <span>15.10.2026</span>
+                            </div>
+                            <div class="news_button">
+                                <button class="button" onclick="openNewsModal(4)">To'liq</button>
+                            </div>
+                        </div>
+                        <div class="news_img">
+                            <img src="../../../public/image/news/news-obidjon-mahmud.jpg" alt="Obidjon Mahmudov">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. JADIDLAR SLIDER SECTION -->
+        <section style="margin-top: 30px;">
+            <div class="section_header">
+                <h2 class="section_title">Jadidlar</h2>
+                <a href="../Jadidlar/Jadidlar.html" class="section_view_all">
+                    Barchasini ko'rish <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+
+            <div class="jadid_slider_grid">
+                <!-- 1. Behbudiy -->
+                <div class="card_carusel_hm" onclick="openScholarModal('behbudiy')">
+                    <div class="card_carusel_img">
+                        <img src="../../../public/image/portraits/behbudiy.jpg" alt="Mahmudxo'ja Behbudiy">
+                    </div>
+                    <div class="card_carusel_body">
+                        <h3>Mahmudxo'ja Behbudiy</h3>
+                        <p class="jd_p">(1875 — 1919)</p>
+                    </div>
+                </div>
+
+                <!-- 2. Qodiriy -->
+                <div class="card_carusel_hm" onclick="openScholarModal('qodiriy')">
+                    <div class="card_carusel_img">
+                        <img src="../../../public/image/news/Jadidlar_files/Abdulla_Qodiriy_39LON6y.jpg" alt="Abdulla Qodiriy">
+                    </div>
+                    <div class="card_carusel_body">
+                        <h3>Abdulla Qodiriy</h3>
+                        <p class="jd_p">(1894 — 1938)</p>
+                    </div>
+                </div>
+
+                <!-- 3. Cho'lpon -->
+                <div class="card_carusel_hm" onclick="openScholarModal('cholpon')">
+                    <div class="card_carusel_img">
+                        <img src="../../../public/image/portraits/cholpon.jpg" alt="Abdulhamid Cho'lpon">
+                    </div>
+                    <div class="card_carusel_body">
+                        <h3>Abdulhamid Cho'lpon</h3>
+                        <p class="jd_p">(1897 — 1938)</p>
+                    </div>
+                </div>
+
+                <!-- 4. Fitrat -->
+                <div class="card_carusel_hm" onclick="openScholarModal('fitrat')">
+                    <div class="card_carusel_img">
+                        <img src="../../../public/image/portraits/fitrat.jpg" alt="Abdurauf Fitrat">
+                    </div>
+                    <div class="card_carusel_body">
+                        <h3>Abdurauf Fitrat</h3>
+                        <p class="jd_p">(1886 — 1938)</p>
+                    </div>
+                </div>
+
+                <!-- 5. Munavvarqori -->
+                <div class="card_carusel_hm" onclick="openScholarModal('munavvarqori')">
+                    <div class="card_carusel_img">
+                        <img src="../../../public/image/portraits/munavvarqori.jpg" alt="Munavvarqori Abdurashidxonov">
+                    </div>
+                    <div class="card_carusel_body">
+                        <h3>Munavvarqori Abdurashidxonov</h3>
+                        <p class="jd_p">(1878 — 1931)</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 3. MANBALAR (ARXIV HUJJATLARI & MATBUOT) -->
+        <section class="tabs_section" id="manbalarSection">
+            <div class="section_header">
+                <h2 class="section_title">Manbalar</h2>
+                <a href="../Manbalar/Arxiv-hujjatlari/index.html" class="section_view_all">
+                    Barchasini ko'rish <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+
+            <div class="tab_navbar">
+                <button class="active" onclick="switchTab('manbalarSection', 'arxiv', this)">Arxiv hujjatlari</button>
+                <button onclick="switchTab('manbalarSection', 'matbuot', this)">Matbuot nashrlari</button>
+            </div>
+
+            <!-- Arxiv Tab -->
+            <div class="tab-pane" data-tab="arxiv">
+                <div class="cards">
+                    <!-- Doc 1 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Muhammad Ikrom arxiv hujjatlari ro\'yxati')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Muhammad Ikrom arxiv hujjatlari ro\'yxati')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/arxiv-1.jpg" alt="Muhammad Ikrom arxiv hujjatlari ro'yxati">
+                        </div>
+                        <div class="details">
+                            <h4>O'zbekiston Milliy arxivi</h4>
+                            <h4>Muhammad Ikrom arxiv hujjatlari ro'yxati</h4>
+                            <p>(O'zMA fondi, 1910 — 1916-yillar)</p>
+                        </div>
+                    </div>
+
+                    <!-- Doc 2 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('O\'zFA MDA 52-fond, 1-ro\'yxat, 15-varaq')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('O\'zFA MDA 52-fond, 1-ro\'yxat, 15-varaq')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/arxiv-2.jpg" alt="O'zFA MDA 52-fond hujjatlari">
+                        </div>
+                        <div class="details">
+                            <h4>O'zFA Sharqshunoslik instituti</h4>
+                            <h4>O'zFA MDA 52-fond, 1-ro'yxat, 2-yig'majild, 15-varaq</h4>
+                            <p>(Noyob qo'lyozma va rasmiy maktub, 1917-yil)</p>
+                        </div>
+                    </div>
+
+                    <!-- Doc 3 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('O\'zMA I-41, o-1, d-1518 xabarnomasi')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('O\'zMA I-41, o-1, d-1518 xabarnomasi')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/arxiv-3.jpg" alt="O'zMA I-41, o-1, d-1518">
+                        </div>
+                        <div class="details">
+                            <h4>O'zbekiston Milliy arxivi</h4>
+                            <h4>O'zMA I-41, o-1, d-1518: Turkiston maorif xabarnomasi</h4>
+                            <p>(1912-yil)</p>
+                        </div>
+                    </div>
+
+                    <!-- Doc 4 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('O\'zFA MDA 52-fond, 73-varaq')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('O\'zFA MDA 52-fond, 73-varaq')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/arxiv-4.jpg" alt="O'zFA MDA 52-fond, 73-varaq">
+                        </div>
+                        <div class="details">
+                            <h4>O'zFA MDA fondi</h4>
+                            <h4>52-fond, 73-varaq: Jadid maktablari dasturi va jadvallari</h4>
+                            <p>(1914-yil)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matbuot Tab -->
+            <div class="tab-pane" data-tab="matbuot" style="display: none;">
+                <div class="cards">
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('«Savdogarliklar na o\'ldi» maqolasi')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('«Savdogarliklar na o\'ldi» maqolasi')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/matbuot-1.jpg" alt="Savdogarliklar na o'ldi">
+                        </div>
+                        <div class="details">
+                            <h4>Iqtisodiy va ijtimoiy matbuot</h4>
+                            <h4>«Savdogarliklar na o'ldi» — davriy matbuot maqolasi</h4>
+                            <p>(«Taraqqiy» gazetasi, 1906-yil)</p>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('«O\'zbekistonda vaqf» - Munavvarqori')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('«O\'zbekistonda vaqf» - Munavvarqori')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/matbuot-2.jpg" alt="O'zbekistonda vaqf">
+                        </div>
+                        <div class="details">
+                            <h4>Ma'rifiy matbuot</h4>
+                            <h4>«O'zbekistonda vaqf» — Munavvarqori Abdurashidxonov</h4>
+                            <p>(«Turkiston» gazetasi, 1922-yil)</p>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('«Yilliq bilan tirikchiliq» maqolasi')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('«Yilliq bilan tirikchiliq» maqolasi')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/matbuot-3.jpg" alt="Yilliq bilan tirikchiliq">
+                        </div>
+                        <div class="details">
+                            <h4>Ijtimoiy-maishiy maqola</h4>
+                            <h4>«Yilliq bilan tirikchiliq» — xalq maishati va iqtisod</h4>
+                            <p>(«Sadoi Turkiston», 1914-yil)</p>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('«Parijda O\'zbekiston» - Majid Qodiriy')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('«Parijda O\'zbekiston» - Majid Qodiriy')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/manbalar/matbuot-4.jpg" alt="Parijda O'zbekiston">
+                        </div>
+                        <div class="details">
+                            <h4>Xalqaro sharh</h4>
+                            <h4>«Parijda O'zbekiston» — Majid Qodiriy xabari</h4>
+                            <p>(«Inqilob» jurnali, 1923-yil)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. IZLANISHLAR VA ASARLAR (jadidlar.uz original) -->
+        <section class="tabs_section" id="izlanishlarSection">
+            <div class="section_header">
+                <h2 class="section_title">Izlanishlar va Asarlar</h2>
+                <a href="../Izlanishlar/Asarlar/index.html" class="section_view_all">
+                    Barchasini ko'rish <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+
+            <div class="tab_navbar">
+                <button class="active" onclick="switchTab('izlanishlarSection', 'asarlar', this)">Asarlar</button>
+                <button onclick="switchTab('izlanishlarSection', 'maqolalar', this)">Maqolalar</button>
+                <button onclick="switchTab('izlanishlarSection', 'dissertatsiyalar', this)">Dissertatsiyalar</button>
+                <button onclick="switchTab('izlanishlarSection', 'esdaliklar', this)">Esdaliklar</button>
+            </div>
+
+            <div class="tab-pane" data-tab="asarlar">
+                <div class="cards">
+                    <!-- Book 1 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Padarkush — Behbudiy')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Padarkush — Behbudiy')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/asarlar/1.jpg" alt="Padarkush">
+                        </div>
+                        <div class="details">
+                            <h4>Mahmudxo'ja Behbudiy</h4>
+                            <h4>«Padarkush yoxud o'qimagan bolaning holi» (3 parda, 4 manzara)</h4>
+                            <p>(1911-yil nashri)</p>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('O\'tkan kunlar — Qodiriy')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('O\'tkan kunlar')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/asarlar/2.jpg" alt="O'tkan kunlar">
+                        </div>
+                        <div class="details">
+                            <h4>Abdulla Qodiriy</h4>
+                            <h4>«O'tkan kunlar» — birinchi o'zbek milliy tarixiy romani</h4>
+                            <p>(1922-yil nashri)</p>
+                        </div>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Kecha va kunduz — Cho\'lpon')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Kecha va kunduz')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/asarlar/3.jpg" alt="Kecha va kunduz">
+                        </div>
+                        <div class="details">
+                            <h4>Abdulhamid Cho'lpon</h4>
+                            <h4>«Kecha va kunduz» — o'zbek ijtimoiy-psixologik romani</h4>
+                            <p>(1936-yil nashri)</p>
+                        </div>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Turkiy Guliston — Avloniy')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Turkiy Guliston')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/asarlar/4.jpg" alt="Turkiy Guliston">
+                        </div>
+                        <div class="details">
+                            <h4>Abdulla Avloniy</h4>
+                            <h4>«Turkiy Guliston yoxud axloq» — milliy tarbiya darsligi</h4>
+                            <p>(1913-yil nashri)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maqolalar Pane -->
+            <div class="tab-pane" data-tab="maqolalar" style="display: none;">
+                <div class="cards">
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Ikki emas, to\'rt til lozim — Behbudiy')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Ikki emas, to\'rt til lozim')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/portraits/behbudiy.jpg" alt="Maqola">
+                        </div>
+                        <div class="details">
+                            <h4>Mahmudxo'ja Behbudiy</h4>
+                            <h4>«Ikki emas, to'rt til lozim» — zamonaviy ta'lim falsafasi</h4>
+                            <p>(Oyina jurnali, 1913)</p>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Bizning holimiz — Munavvarqori')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Bizning holimiz')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/portraits/munavvarqori.jpg" alt="Maqola">
+                        </div>
+                        <div class="details">
+                            <h4>Munavvarqori Abdurashidxonov</h4>
+                            <h4>«Bizning holimiz va taraqqiy yo'llari»</h4>
+                            <p>(Xurshid gazetasi, 1906)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dissertatsiyalar Pane -->
+            <div class="tab-pane" data-tab="dissertatsiyalar" style="display: none;">
+                <div class="cards">
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Begali Qosimov dissertatsiyasi')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Jadid adabiyoti dissertatsiyasi')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/portraits/qosimov.jpg" alt="Dissertatsiya">
+                        </div>
+                        <div class="details">
+                            <h4>Prof. Begali Qosimov</h4>
+                            <h4>«Milliy uyg'onish davri o'zbek adabiyoti va jadidchilik poetikasi»</h4>
+                            <p>(Doktorlik dissertatsiyasi)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Esdaliklar Pane -->
+            <div class="tab-pane" data-tab="esdaliklar" style="display: none;">
+                <div class="cards">
+                    <div class="card1">
+                        <div class="icon_item">
+                            <i class="fa-solid fa-download" onclick="downloadItem('Sadriddin Ayniy Esdaliklari')" title="Yuklab olish"></i>
+                            <i class="fa-solid fa-share-nodes" onclick="shareItem('Esdaliklar')" title="Ulashish"></i>
+                        </div>
+                        <div class="container2">
+                            <img src="../../../public/image/portraits/ayniy.jpg" alt="Esdaliklar">
+                        </div>
+                        <div class="details">
+                            <h4>Sadriddin Ayniy</h4>
+                            <h4>«Esdaliklar» — Buxoroda jadidlik va ma'rifat kurashlari guvohligi</h4>
+                            <p>(Toshkent, 1950)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. KO'R-ESHIT-O'QI (MULTIMEDIA) SECTION -->
+        <section class="tabs_section" id="multimediaSection">
+            <div class="section_header">
+                <h2 class="section_title">Ko‘r-eshit-o‘qi</h2>
+                <a href="../Kor-eshit-oqi/Suratlar/index.html" class="section_view_all">
+                    Barchasini ko'rish <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+
+            <div class="tab_navbar">
+                <button class="active" onclick="switchTab('multimediaSection', 'koruvlar', this)">Ko'ruvlar (Videolar)</button>
+                <button onclick="switchTab('multimediaSection', 'suratlar', this)">Suratlar jamg'armasi</button>
+                <button onclick="switchTab('multimediaSection', 'eshituvlar', this)">Eshituvlar (Audiolar)</button>
+            </div>
+
+            <!-- Ko'ruvlar (Videos) -->
+            <div class="tab-pane" data-tab="koruvlar">
+    <div class="multimedia_grid">
+        
+        <a href="https://www.youtube.com/watch?v=IaqaD04T2gg" target="_blank" class="video_card">
+            <div class="video_thumbnail">
+                <img src="https://img.youtube.com/vi/IaqaD04T2gg/hqdefault.jpg" alt="Behbudiy filmi">
+                <div class="play_icon"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="video_caption">«Mahmudxo'ja Behbudiy» badiiy-hujjatli filmi</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=A-K0v_gkm-s" target="_blank" class="video_card">
+            <div class="video_thumbnail">
+                <img src="https://img.youtube.com/vi/A-K0v_gkm-s/hqdefault.jpg" alt="Avloniy filmi">
+                <div class="play_icon"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="video_caption">«Avloniy» — ma'rifat fidoiysi haqida to'liq metrajli film</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=EEIu7z_D580" target="_blank" class="video_card">
+            <div class="video_thumbnail">
+                <img src="https://img.youtube.com/vi/EEIu7z_D580/hqdefault.jpg" alt="Ibrat filmi">
+                <div class="play_icon"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="video_caption">«Is'hoqxon Ibrat» — ziyo tarqatgan alloma haqida kinoasar</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=yxpx5ssNnzM" target="_blank" class="video_card">
+            <div class="video_thumbnail">
+                <img src="https://img.youtube.com/vi/yxpx5ssNnzM/hqdefault.jpg" alt="Fitrat va Cho'lpon">
+                <div class="play_icon"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="video_caption">«Fitrat va Cho'lpon: Hurriyat kuychilari» hujjatli xronikasi</div>
+        </a>
+
+    </div>
+</div>
+
+            <!-- Suratlar Pane -->
+            <div class="tab-pane" data-tab="suratlar" style="display: none;">
+                <div class="multimedia_grid">
+                    <div class="video_card" onclick="openScholarModal('munavvarqori')">
+                        <img src="../../../public/image/news/Jadidlar_files/photo_2026-10-19_10-29-04.jpg" alt="Toshkent jadidlari">
+                        <div class="video_caption">Toshkent usuli jadid maktabi muallimlari (1908-yil)</div>
+                    </div>
+
+                    <div class="video_card" onclick="openScholarModal('behbudiy')">
+                        <img src="../../../public/image/news/Jadidlar_files/photo_2026-10-19_11-19-08.jpg" alt="Samarqand jadidlari">
+                        <div class="video_caption">Mahmudxo'ja Behbudiy va «Oyina» jurnali tahririyati</div>
+                    </div>
+
+                    <div class="video_card" onclick="openScholarModal('cholpon')">
+                        <img src="../../../public/image/news/Jadidlar_files/photo_2026-10-19_17-03-01.jpg" alt="Cho'lpon surati">
+                        <div class="video_caption">Abdulhamid Cho'lpon Boku turkologiya s'yezdida (1926-yil)</div>
+                    </div>
+
+                    <div class="video_card" onclick="openScholarModal('qosimov')">
+                        <img src="../../../public/image/news/Jadidlar_files/photo_2026-10-26_13-27-21.jpg" alt="Olimlar">
+                        <div class="video_caption">O'zbek jadidshunos olimlari xalqaro anjumanda</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eshituvlar Pane -->
+            <div class="tab-pane" data-tab="eshituvlar" style="display: none;">
+    <div class="cards">
+        
+        <div class="card1" style="padding: 20px;">
+            <div style="font-size: 32px; color: #0e2b65; margin-bottom: 10px;"><i class="fa-solid fa-headphones"></i></div>
+            <h4 style="color: #0e2b65; font-size: 16px; margin-bottom: 6px;">Cho'lpon: «Go'zal» va «Buzilgan o'lkaga»</h4>
+            <p style="color: #64748b; font-size: 13px; margin-bottom: 15px;">O'zbekiston xalq artisti ijrosida audio yozuv</p>
+            <audio controls style="width: 100%;">
+                <source src="untitled.mp3" type="audio/mpeg">
+                Brauzeringiz audioni qo'llab-quvvatlamaydi.
+            </audio>
+        </div>
+
+        <div class="card1" style="padding: 20px;">
+            <div style="font-size: 32px; color: #0e2b65; margin-bottom: 10px;"><i class="fa-solid fa-headphones"></i></div>
+            <h4 style="color: #0e2b65; font-size: 16px; margin-bottom: 6px;">Fitrat: «Munozara» asaridan parchalar</h4>
+            <p style="color: #64748b; font-size: 13px; margin-bottom: 15px;">Radiobadiha va ovozli drama audio yozuvi</p>
+            <audio controls style="width: 100%;">
+                <source src="Qor_qoynida_lola_hikoya.MP3" type="audio/mpeg">
+                Brauzeringiz audioni qo'llab-quvvatlamaydi.
+            </audio>
+        </div>
+
+    </div>
+</div>
+        </section>
+
+        <!-- 6. FOYDALI HAVOLALAR (PARTNERS) -->
+        <section style="margin: 40px 0;">
+            <div class="section_header">
+                <h2 class="section_title">Foydali havolalar</h2>
+            </div>
+
+            <div class="partners_grid">
+                <a href="https://history.academy.uz" target="_blank" class="partner_card">
+                    <div class="partner_icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="partner_info">
+                        <h4>O'zFA Tarix instituti</h4>
+                        <p>history.academy.uz</p>
+                    </div>
+                </a>
+
+                <a href="https://natlib.uz" target="_blank" class="partner_card">
+                    <div class="partner_icon"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="partner_info">
+                        <h4>O'zbekiston Milliy kutubxonasi</h4>
+                        <p>natlib.uz</p>
+                    </div>
+                </a>
+
+                <a href="https://archive.gov.uz" target="_blank" class="partner_card">
+                    <div class="partner_icon"><i class="fa-solid fa-box-archive"></i></div>
+                    <div class="partner_info">
+                        <h4>O'zbekiston Milliy arxivi</h4>
+                        <p>archive.gov.uz</p>
+                    </div>
+                </a>
+
+                <a href="https://shohidlarxotirasi.uz" target="_blank" class="partner_card">
+                    <div class="partner_icon"><i class="fa-solid fa-monument"></i></div>
+                    <div class="partner_info">
+                        <h4>Qatag'on qurbonlari xotirasi muzeyi</h4>
+                        <p>shohidlarxotirasi.uz</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       FOOTER (jadidlar.uz original)
+       ========================================================================== -->
+    <footer>
+        <div class="footer-container">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="../../../public/logo.svg" alt="Jadidlar Logo">
+                </a>
+            </div>
+
+            <!-- Footer Contacts -->
+            <div class="footer-info">
+                <div class="footer-info-1">
+                    <h4 class="fi-1">Elektron pochta</h4>
+                    <a href="mailto:info@jadidlar.uz">info@jadidlar.uz</a>
+                </div>
+                <div class="footer-info-1">
+                    <h4 class="fi-1">Telefon raqam</h4>
+                    <a href="tel:+998712335470">+998 (71) 233-54-70</a>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-icons">
+                <h4 class="fi-2">Ijtimoiy tarmoqlar</h4>
+                <div class="ft-icons-flex">
+                    <div class="icons-1">
+                        <a href="https://t.me/jadidlar_uz" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <div class="icons-1">
+                        <a href="https://facebook.com/jadidlar.uz" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="icons-1">
+                        <a href="https://instagram.com/jadidlar.uz" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="icons-1">
+                        <a href="https://youtube.com/@jadidlar_uz" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-text">
+            <p>«Jadidlar» Barcha huquqlar himoyalangan.</p>
+            <p>© Copyright 2024 — 2026. O'zbekiston Respublikasi Fanlar akademiyasi Tarix instituti</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll_top_btn" id="scrollTopBtn" title="Yuqoriga">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- SCHOLAR & NEWS DETAIL MODAL -->
+    <div class="modal-overlay" id="scholarModal">
+        <div class="modal-dialog">
+            <button class="modal-close-btn" onclick="closeModal('scholarModal')">✕</button>
+            <div id="scholarModalBody"></div>
+        </div>
+    </div>
+
+    <!-- SEARCH MODAL -->
+    <div class="modal-overlay" id="searchModal">
+        <div class="modal-dialog">
+            <button class="modal-close-btn" onclick="closeModal('searchModal')">✕</button>
+            <h3 style="font-size: 20px; color: #0e2b65; margin-bottom: 16px;">Jadidlar portalidan qidirish</h3>
+            <div class="search-modal-box">
+                <i class="fa-solid fa-magnifying-glass" style="color: #64748b;"></i>
+                <input type="text" id="siteSearchInput" placeholder="Jadid ismi, asar yoki mavzuni kiriting...">
+            </div>
+            <div class="search-results-list" id="searchResults"></div>
+        </div>
+    </div>
+
+    <script src="../../styles/common.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

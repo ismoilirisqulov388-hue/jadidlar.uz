@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkiston Muxtoriyati Asarlari - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper ">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper active">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Turkiston Muxtoriyati</span>
+                <span>/</span>
+                <span>Asarlar</span>
+            </div>
+            <h1 class="banner-title">Turkiston Muxtoriyati Davri Asarlari</h1>
+            <p class="banner-subtitle">
+                1917-1918 yillarda Qo'qon shahrida tashkil topgan ilk demokratik Turkiston Muxtoriyatining huquqiy, siyosiy va tarixiy asarlari.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <div class="items-grid" style="margin-top: 35px;">
+<!-- Card 1 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🏛</div>
+                    <div class="doc-meta">
+                        <span>✍️ Mustafo Cho'qay</span>
+                        <span>📅 1917-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/Коканская_автономия.jpg" alt="Turkiston Muxtoriyati"></div>
+                    <h3 class="doc-title">«Turkiston Muxtoriyati» asari</h3>
+                    <p class="doc-excerpt">
+                        Turkiston Muxtoriyati Bosh vaziri Mustafo Cho'qay qalamiga mansub tarixiy asar. Davlatning tuzilishi, Konstitutsiyaviy asoslari va xalqaro munosabatlari yoritilgan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Mustafo Cho\'qay: «Turkiston Muxtoriyati»', 'Muxtoriyat hukumati rahbari tomonidan yozilgan eng muhim siyosiy manba. Rossiya imperiyasi qulashidan so\'ng Turkiston xalqlarining birlashishi va mustaqil boshqaruvga erishish yo\'lidagi qadamlari batafsil ifodalangan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Tarixiy asar</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#fef3c7; color:#b45309;">🏛</div>
+                    <div class="doc-meta">
+                        <span>✍️ Mahmudxo'ja Behbudiy</span>
+                        <span>📅 1917-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/fargona.jpg" alt="Turkiston Muxtoriyati"></div>
+                    <h3 class="doc-title">«Qo'qon muxtoriyati va bizning vazifalarimiz»</h3>
+                    <p class="doc-excerpt">
+                        Behbudiyning Muxtoriyat e'lon qilingan kunlarda Turkiston xalqlariga yo'llagan chaqirig'i. Barcha millat va elatlarni davlatni asrab qolish uchun jipslashishga chorlagan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Behbudiy: Qo\'qon muxtoriyati vazifalari', '1917-yil dekabr oyida «Ulug\' Turkiston» gazetasida e\'lon qilingan. Behbudiy unda milliy armiya tuzish, moliya tizimini yo\'lga qo\'yish va parlament shakllantirish bo\'yicha amaliy takliflarni ilgari surgan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Siyosiy manifest</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🏛</div>
+                    <div class="doc-meta">
+                        <span>✍️ Vadim Chaykin</span>
+                        <span>📅 1919-yil</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/asarlar/7.jpg" alt="Turkiston Muxtoriyati"></div>
+                    <h3 class="doc-title">«Qo'qon fojiasi va bolsheviklar jinoyati»</h3>
+                    <p class="doc-excerpt">
+                        1918-yil fevral oyida qizil armiya va arman dashnoqlari tomonidan Qo'qon shahrining yondirilishi va Muxtoriyatning qonga botirilishi tafsilotlari.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('Qo\'qon fojiasi', 'Huquqshunos Vadim Chaykinning o\'z vaqtida e\'lon qilingan guvohlik kitobi. 10 000 dan ortiq tinch aholining qirg\'in qilinganligi dalillar bilan bayon qilingan.')">Mutolaa qilish</button>
+                        <span class="btn-secondary-sm">Hujjatli qissa</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/asarlar/8.jpg" alt="Turkiston Muxtoriyati">
+                        <span class="doc-badge">Hujjat</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Turkiston Muxtoriyati Milliy Majlisi qarorlari</h3>
+                        <p class="doc-meta">Sana: 1917-yil dekabr &bull; Qo'qon</p>
+                        <p class="doc-desc">Qo'qonda qabul qilingan davlat ramzlari, militsiya tuzilmasi va moliya tizimi to'g'risidagi tarixiy hujjatlar.</p>
+                        <span class="btn-secondary-sm">O'rganish</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/asarlar/9.jpg" alt="Turkiston Muxtoriyati">
+                        <span class="doc-badge">Tarix</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Mustafo Cho'qay: Turkiston mustaqilligi yo'lida</h3>
+                        <p class="doc-meta">Muallif: <strong>Mustafo Cho'qay</strong> &bull; Parij, 1935</p>
+                        <p class="doc-desc">Turkiston Muxtoriyati Bosh vaziri Mustafo Cho'qayning milliy ozodlik kurashi va Muxtoriyat fojiasi haqidagi kitobi.</p>
+                        <span class="btn-secondary-sm">O'rganish</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/asarlar/9.jpg" alt="Muxtoriyat">
+                        <span class="doc-badge">Qonun</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Muxtoriyat Konstitutsiyasi loyihasi asoslari</h3>
+                        <p class="doc-meta">Mualliflar: <strong>Muxtoriyat hukumati a'zolari</strong> &bull; 1918</p>
+                        <p class="doc-desc">Demokratik parlamentarizm, inson huquqlari va barcha millatlarga teng imkoniyatlar kafolati belgilangan loyiha.</p>
+                        <span class="btn-secondary-sm">O'rganish</span>
+                    </div>
+                </div>
+</div>
+        
+        <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+</div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkiston Muxtoriyati Maqolalari - Jadidlar merosi</title>
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../../../public/logo.svg">
+</head>
+<body>
+
+    <!-- SITE HEADER -->
+        <header>
+        <nav>
+            <div class="container_full nav-row">
+                <!-- LOGO -->
+                <div class="nav-logo">
+                    <a href="../../jadidlar-bosh oyna/index.html">
+                        <img src="../../../../public/logo.svg" alt="Jadidlar Logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../../Jadidlar/Jadidlar.html" class="upper ">JADIDLAR</a>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Manbalar/Arxiv-hujjatlari/index.html" class="upper ">MANBALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                                <li><a href="../../Manbalar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Izlanishlar/Asarlar/index.html" class="upper ">IZLANISHLAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Izlanishlar/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Izlanishlar/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Izlanishlar/Dissertatsiyalar/index.html">Dissertatsiyalar</a></li>
+                                <li><a href="../../Izlanishlar/Esdaliklar/index.html">Esdaliklar</a></li>
+                                <li><a href="../../Izlanishlar/Matbuot/index.html">Matbuot</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Til-va-imlo/Asarlar/index.html" class="upper ">TIL VA IMLO</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Til-va-imlo/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Til-va-imlo/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Til-va-imlo/Hikmatlar/index.html">Hikmatlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="nav-drop">
+                                <a href="../../Turkiston-muxtoriyati/Asarlar/index.html" class="upper active">TURKISTON MUXTORIYATI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Asarlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Maqolalar/index.html">Maqolalar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Sherlar/index.html">She'rlar</a></li>
+                                <li><a href="../../Turkiston-muxtoriyati/Esdaliklar/index.html">Esdaliklar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Voqealar/Yangiliklar/index.html" class="upper ">VOQEALAR</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Voqealar/Yangiliklar/index.html">Yangiliklar</a></li>
+                                <li><a href="../../Voqealar/Yiginlar/index.html">Yig'inlar</a></li>
+                                <li><a href="../../Voqealar/Seminarlar/index.html">Seminarlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <div class="nav-drop">
+                                <a href="../../Kor-eshit-oqi/Suratlar/index.html" class="upper ">KO'R-ESHIT-O'QI</a>
+                                <span class="drop-icon">▾</span>
+                            </div>
+                            <ul class="drop-hover">
+                                <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Suratlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Ko'ruvlar</a></li>
+                                <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Eshituvlar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../Biz-haqimizda/Biz-haqimizda.html" class="upper ">BIZ HAQIMIZDA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT ACTIONS -->
+                <div class="nav-actions">
+                    <button class="nav-icon-btn" onclick="openSearchModal()" title="Saytdan qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <div class="lang-select-box">
+                        <button class="lang-btn" onclick="toggleLangMenu()" type="button" aria-label="Tilni tanlash">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="currentLangText">O'zbekcha</span>
+                            <span class="lang-arrow">&#x25BE;</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu">
+                            <button type="button" onclick="selectLang('uz', 'O\'zbekcha')">O'zbekcha</button>
+                            <button type="button" onclick="selectLang('oz', '&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;')">&#x040E;&#x0437;&#x0431;&#x0435;&#x043A;&#x0447;&#x0430;</button>
+                            <button type="button" onclick="selectLang('en', 'English')">English</button>
+                        </div>
+                    </div>
+
+                    <button class="hamburger-toggle" onclick="toggleMobileMenu()" title="Menyu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="container banner-content">
+            <div class="breadcrumbs">
+                <a href="../../jadidlar-bosh oyna/index.html">Bosh sahifa</a>
+                <span>/</span>
+                <span>Turkiston Muxtoriyati</span>
+                <span>/</span>
+                <span>Maqolalar</span>
+            </div>
+            <h1 class="banner-title">Turkiston Muxtoriyati Davri Maqolalari</h1>
+            <p class="banner-subtitle">
+                1917-yil noyabr - 1918-yil fevral oylarida «El bayrog'i», «Ulug' Turkiston», «Hurriyat» gazetalarida chop etilgan publitsistik maqolalar.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <div class="items-grid" style="margin-top: 35px;">
+<!-- Card 1 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🗞</div>
+                    <div class="doc-meta">
+                        <span>✍️ Munavvarqori Abdurashidxonov</span>
+                        <span>📅 1917-yil, «Najot»</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/Коканская_автономия.jpg" alt="Muxtoriyat maqolasi"></div>
+                    <h3 class="doc-title">«Muxtoriyat ne demakdir?»</h3>
+                    <p class="doc-excerpt">
+                        Muxtoriyat tushunchasi, xalq hokimiyati va Turkistonning o'z taqdirini o'zi belgilashi lozimligi sodda xalq tilida tushuntirilgan maqola.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Muxtoriyat ne demakdir?»', 'Munavvarqori ushbu maqolasida mustabid tuzumdan qutulgan Turkiston xalqiga o\'z huquqlarini anglash va himoya qilish uchun birlashishni uqtiradi.')">O'qish</button>
+                        <span class="btn-secondary-sm">Maqola</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="doc-card-modern">
+                    <div class="doc-icon-badge" style="background:#eff6ff; color:#1852bd;">🗞</div>
+                    <div class="doc-meta">
+                        <span>✍️ Ashurali Zohiriy</span>
+                        <span>📅 1917-yil, «El bayrog'i»</span>
+                    </div>
+                    <div class="doc-thumb-box"><img src="../../../../public/image/news/Jadidlar_files/fargona.jpg" alt="Muxtoriyat maqolasi"></div>
+                    <h3 class="doc-title">«Yashasin Turkiston Muxtoriyati!»</h3>
+                    <p class="doc-excerpt">
+                        Qo'qon shahrida Muxtoriyat e'lon qilingan kunning tantanasi, xalqning ko'tarinki kayfiyati va mustaqillik shodiyonasi ifodalangan.
+                    </p>
+                    <div class="doc-actions">
+                        <button class="btn-primary-sm" onclick="openDetailModal('«Yashasin Turkiston Muxtoriyati!»', 'Qo\'qonda 60 mingdan ortiq aholi ko\'chalarga chiqib, milliy bayroqlar ostida Muxtoriyatni qo\'llab-quvvatlagani tasvirlangan.')">O'qish</button>
+                        <span class="btn-secondary-sm">Publitsistika</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/news/Jadidlar_files/Obidjon_Mahmudov_7adBbGD.jpg" alt="Muxtoriyat maqolasi">
+                        <span class="doc-badge">Davlat</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Turkiston Muxtoriyatining mintaqa davlatchiligidagi o'rni</h3>
+                        <p class="doc-meta">Muallif: <strong>Prof. D. Ziyoeva</strong> &bull; 2023</p>
+                        <p class="doc-desc">Ilk demokratik respublika tajribasi, uning Markaziy Osiyo xalqlari ozodlik kurashiga ko'rsatgan ulkan ta'siri.</p>
+                        <span class="btn-secondary-sm">O'qish</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/news/Jadidlar_files/Ubaydullaxoja_Asadullaxojayev.jpg" alt="Muxtoriyat maqolasi">
+                        <span class="doc-badge">Huquq</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Muxtoriyat qonunchiligi va inson huquqlari masalasi</h3>
+                        <p class="doc-meta">Muallif: <strong>Dr. S. Hayitov</strong> &bull; 2024</p>
+                        <p class="doc-desc">Diniy bag'rikenglik, ayollar huquqlari va sud tizimini isloh qilish bo'yicha qabul qilingan huquqiy normalar.</p>
+                        <span class="btn-secondary-sm">O'qish</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/news/Jadidlar_files/Bosmachilar_._Hayit.png" alt="Muxtoriyat maqolasi">
+                        <span class="doc-badge">Diplomatiya</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Muxtoriyat hukumatining xalqaro diplomatik aloqalari</h3>
+                        <p class="doc-meta">Muallif: <strong>K. Rajabov</strong> &bull; 2022</p>
+                        <p class="doc-desc">Dunyo davlatlariga yo'llangan murojaatlar, xalqaro maydonda mustaqillikni e'tirof ettirish yo'lidagi harakatlar.</p>
+                        <span class="btn-secondary-sm">O'qish</span>
+                    </div>
+                </div>
+                <div class="doc-card-modern">
+                    <div class="doc-thumb-box">
+                        <img src="../../../../public/image/portraits/ayniy.jpg" alt="Maqola">
+                        <span class="doc-badge">Tarix</span>
+                    </div>
+                    <div class="doc-info-box">
+                        <h3 class="doc-title">Qo'qon voqealari va xalq fojiasining tarixiy saboqlari</h3>
+                        <p class="doc-meta">Muallif: <strong>O'. Toshpo'latov</strong> &bull; 2023</p>
+                        <p class="doc-desc">Muxtoriyatning tor-mor etilishi oqibatlari va mustaqillik g'oyasining avlodlar xotirasida yashab qolishi.</p>
+                        <span class="btn-secondary-sm">O'qish</span>
+                    </div>
+                </div>
+</div>
+        
+        <div class="pagination-wrapper">
+            <button class="page-num active" data-page="1">1</button>
+            <button class="page-num" data-page="2">2</button>
+            <button class="page-num" data-page="3">3</button>
+            <button class="page-num" data-page="next">›</button>
+        </div>
+</div>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a href="../../jadidlar-bosh oyna/index.html" class="brand-logo"><img src="../../../../public/logo.svg" alt="Jadidlar Logo" style="height: 38px; width: auto;"></a>
+                    <p>XX asr boshidagi ma'rifatparvarlik harakati, jadid bobolarimizning ilmiy, adabiy va ijtimoiy merosini o'rganishga bag'ishlangan yagona raqamli portal.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bo'limlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Jadidlar/Jadidlar.html">Jadid namoyandalari</a></li>
+                        <li><a href="../../Manbalar/Arxiv-hujjatlari/index.html">Arxiv hujjatlari</a></li>
+                        <li><a href="../../Izlanishlar/Asarlar/index.html">Ilmiy asarlar</a></li>
+                        <li><a href="../../Turkiston-muxtoriyati/Asarlar/index.html">Turkiston Muxtoriyati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../Kor-eshit-oqi/Suratlar/index.html">Tarixiy suratlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Koruvlar/index.html">Hujjatli filmlar</a></li>
+                        <li><a href="../../Kor-eshit-oqi/Eshituvlar/index.html">Audio ma'ruzalar</a></li>
+                        <li><a href="../../Voqealar/Yangiliklar/index.html">So'nggi yangiliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Elektron pochta</strong>
+                            <span>info@jadidlar.uz</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+998 (71) 233-54-70</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Telegram">✈️</a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                        <a href="#" class="social-btn" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jadidlar.uz — Barcha huquqlar himoyalangan.</p>
+                <p>O'zbekiston Milliy kutubxonasi va arxivlar hamkorligida ishlab chiqilgan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" title="Yuqoriga">▲</button>
+
+    <script src="../../../styles/common.js"></script>
+</body>
+</html>
